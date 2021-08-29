@@ -1,0 +1,57 @@
+<html>
+    <head>
+	    <title>Guest List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <center>
+            <h1 style="margin-top: 20px; margin-bottom: 20px; font-size: 28.5px;">
+	            GUEST LIST
+            </h1>
+            <hr/>
+            <br>
+            
+            <div id="rows">
+
+                <input type="text" placeholder="Enter name" id="input_name">
+                <button id="submit_button" onclick="submit()">Submit</button>
+                <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	            
+                <hr>
+
+                <div id="display_name">
+                </div>
+                <hr>
+                <br>
+	            <div id="Show1"><h3 id="hd1">Invited Guests</h3>
+		            <button id="show" onclick="show()">Show</button>
+		            <p id="Show_Guests"></p>
+				</div>
+                <br>
+	
+                <hr>
+                <br>
+                <button id="sort_button" onclick="sorting()">
+	                Sorted List
+                </button>
+
+
+	            <div id="names_sort"></div>
+                <br>
+            
+			</div>
+	        <hr>
+	        
+			<input type="text" placeholder="Search name" id="input_search">&nbsp;
+			<button id="search" onclick="search()">Search</button>
+            <p id="name_found"></p>
+            <br>
+    
+        </center>
+		
+    </body>
+</html>
